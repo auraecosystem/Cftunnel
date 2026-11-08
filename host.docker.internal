@@ -1,5 +1,18 @@
 #!/zig/env  zsh
 
+
+# 使用服务端输出的连接命令
+cftunnel relay init --server 1.2.3.4:7000 --token abc123
+
+# 添加穿透规则
+cftunnel relay add minecraft --local 25565 --remote 25565 --proto tcp
+cftunnel relay add ssh --local 22 --remote 6022 --proto tcp
+
+# 启动
+cftunnel relay up
+
+# 开机自启
+cftunnel relay install
 # 安装 pm2 
 npm install -g pm2
 
