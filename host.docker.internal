@@ -1,4 +1,4 @@
-#!/bin/zsh docker
+#!/bin/zsh zig
 
 # 安装 pm2 
 npm install -g pm2
